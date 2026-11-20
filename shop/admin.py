@@ -13,8 +13,5 @@ class ProductAdmin(admin.ModelAdmin):
         "created_at",
     )
 
-    list_filter = ("is_available", "created_at")
     search_fields = ("name", "description")
-    list_editable = ("price", "stock", "is_available")
-    ordering = ("name",)
-    list_per_page = 15
+    list_filter = ("is_available",)
